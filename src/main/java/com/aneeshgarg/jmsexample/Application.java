@@ -12,7 +12,6 @@ import org.springframework.jms.config.JmsListenerContainerFactory;
 import org.springframework.jms.core.JmsTemplate;
 
 import javax.jms.ConnectionFactory;
-import java.util.Arrays;
 import java.util.Scanner;
 
 @SpringBootApplication
@@ -30,7 +29,6 @@ public class Application {
     }
 
     public static void main(String[] args) {
-        System.out.println("Arguments: " + Arrays.asList(args));
 
         // Launch the application
         ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
